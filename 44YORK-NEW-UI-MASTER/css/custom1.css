@@ -1,0 +1,456 @@
+/*peh customizations */
+
+/*hide default OTB tile*/
+prm-no-search-result > md-card {
+    display:none;
+} 
+
+head {
+    display: none;
+}
+
+/*more space for logo */
+prm-topbar {
+    height: 100px;
+	background-color: #262F38
+}
+
+/*larger font on top nav */
+prm-main-menu[menu-type=menu] .md-button,prm-topbar .top-nav-bar .md-button{font-size:1.25em;text-transform:capitalize;font-weight:600;}
+
+
+/*hide login menu */
+.md-menu {
+	
+	display: none;
+		
+}
+
+prm-topbar prm-logo {
+    max-width: 250px;
+    min-width: 150px;
+}
+
+prm-logo{
+    order:-1;
+}
+
+/* remove hover highlight from logo */
+#banner > a.md-primoExplore-theme:hover, #banner > a.md-primoExplore-theme:focus {
+    background-color: unset;
+    box-shadow: unset;
+}
+
+/*facet background */
+
+prm-facet-group button.section-title {
+	background: #00546E
+}
+/*facet text */
+
+prm-facet-group button.section-title div h3 {
+	color: #fff;	
+}
+
+
+/* Browse search colour*/
+
+prm-primary-bg, prm-browse-search-bar, prm-journals-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark::after, prm-tags-search-bar {
+    background-color: #262F38;
+}
+
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar {
+    background-color: #00546E
+}
+
+/*sign in colour*/
+/* Top nav bar (strip behind logo) */
+prm-topbar .top-nav-bar {
+    background-color: #262F38;
+    position: relative;
+    top: 0px;
+
+/*sign in alert bar*/
+}
+
+
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-bg {
+    background-color: #C7C1B0;
+}
+
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-border {
+    border-color: #262F38;
+}
+
+/*twitter timeline on homepage*/
+md-card-content > iframe {
+    min-height: 480px;
+	display:block;
+    width:100%;
+}
+
+md-card-content > img{
+	
+box-sizing:border-box;display:-ms-flexbox;display:flex;-ms-flex:0 0 auto;flex:0 0 auto;width:100%;height:75%important;
+background-color:#FFFFFF
+	
+}
+
+/* search alternatives */
+
+.searchAlternatives {
+  color: black;
+  left: 70px;
+}
+
+.searchAlternatives > div:first-child {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin:1em auto 0;
+}
+
+@media only screen and (max-width: 1920px) {
+  .searchAlternatives > div:first-child {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .searchAlternatives > div:first-child {
+    width: 70%;
+  }
+}
+
+
+.searchAlternatives{
+	
+	background-color:#FFFFFF
+	
+}
+
+@media only screen and (max-width: 1275px) {
+  .searchAlternatives > div:first-child {
+    width: 100%;
+  }
+}
+
+.searchAlternatives .md-button {
+  min-height: 30px;
+}
+
+.searchAlternatives .md-button div {
+  padding: 6px 0;
+}
+
+.worldcatLogo::before {
+  max-height: 18px;
+  background-image: url("../img/worldcat.png");
+  background-position:0px ;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  content: "\00a0";
+  white-space: pre-wrap;
+  display: block;
+  overflow: visible;
+  width: 98px;
+}
+
+.scholarLogo::before {
+  background-image: url("../img/scholar.png");
+  max-height: 18px;
+  background-position:0px;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  content: "\00a0";
+  white-space: pre-wrap;
+  display: block;
+  width: 115px;
+}
+
+.yewnoLogo::before {
+  background-image: url("../img/yewno.png");
+  max-height: 18px;
+  background-position:0px;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  content: "\00a0";
+  white-space: pre-wrap;
+  display: block;
+  width: 68px;
+}
+
+.try-txt{
+	
+	padding-top: 10px;	
+	
+}
+
+/*Custom Footer*/
+/*- ### --- Primo Footer CSS ---- Code Originally from NLNZ --- ### */
+/*- ########## ----------- Footer structure ----------- ########## */
+    hr,
+    .a-horizontalrule {
+        border: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        clear: both;
+        display: block;
+        height: auto;
+        margin: 20px 0 30px;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        position: relative;
+        width: 100%
+    }
+    hr:before,
+    .a-horizontalrule:before {
+        background: #bfc0c2;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%
+    }
+    hr.horizontalrule-s,
+    .a-horizontalrule.horizontalrule-s {
+        margin: 10px 0 10px
+    }
+    hr.no-gutter,
+    .a-horizontalrule.no-gutter {
+        padding-left: 25px;
+        padding-right: 0;
+        overflow:hidden;
+    }
+    .clear {
+        clear:both;
+    }
+    #footerWrapper {
+        background-color:#262F38;
+        position:relative;
+        z-index:1;
+    }
+	
+	prm-explore-footer-after #footerWrapper {margin-top: 20px;}
+	
+    #footerWrapper .headline  {
+        font-size:16px;
+        font-weight:bold;
+        line-height:22px;
+        color:#fffffc;
+        margin-bottom:20px;
+    }
+    #footerWrapper > ul {
+        list-style: none outside none;
+        margin: 0 auto;
+        max-width:1200px;
+        overflow:hidden;
+        padding-top:30px;
+        padding-bottom:22px;
+        position:relative;
+        width: 100%;
+        border-bottom: 2px solid #fffffc;
+    }
+    #footerWrapper > ul li {
+        float:left;
+        width:33.3%;
+        margin-left: 12%;
+    }
+    #footerWrapper > ul li:first-child {
+        padding-left:0;
+    }
+    #footerWrapper > ul li .text {
+        color: #fffffc;
+        font-size:14px;
+        line-height:20px;
+        position:relative;
+        text-align:left;
+        padding-top:10px;
+        padding-right:15px;
+        padding-left:0;
+        padding-bottom:0;
+    }
+    .span {
+         padding-bottom: 10px;
+    }
+    .ftext {
+        /*because normally we the use text class independent of parent, so I'm not deleting it--skc*/
+        font-size:16px;
+        font-weight:normal;
+        line-height:20px;
+        color:#fffffc;
+        margin-bottom:10px;
+    }
+    .ftext a {
+        color:#fffffc;
+        text-decoration: underline; /*Jiet's design*/
+    }
+    .ftext a:hover {
+        color:#1492C9;
+    }
+    /*- Area below; footer level 2: links and logos */
+    #footerWrapper .bar {
+        font-size:16px;
+        font-weight:normal;
+        line-height:20px;
+        height: auto;
+        background-color: #262F38;
+        padding: 20px 0;
+        border:0;
+    }
+    #footerWrapper .bar-wrap {
+    margin: 0 auto; /*keeps this part in alignment with upper portion */
+    max-width: 1200px;
+    position: relative;
+    padding:20px 0;
+    width: 95%;
+    box-shadow: 0 50vh 0 50vh #262F38; /* make footer look like it goes to bottom of page*/
+    }
+    #footerWrapper > ul .bar-wrap {
+        display: inline-block;
+        /*ensure links behave as a group*/
+    }
+    #footerWrapper > ul li .bar-wrap {
+        float:left;
+        width: 40%;
+    }
+    .links {
+        font-size:14px;
+        line-height:20px;
+        float:left;
+        list-style: none outside none;
+        position:relative;
+    }
+    .links li {
+        display: inline-block;
+        float:left;
+        margin-right:10px;
+        color:#fffffc;
+    }
+    .links a {
+        color:#fffffc;
+        text-decoration:underline; /*as per Jiet's design--skc*/
+    }
+    .links a:hover {
+        color:#1492C9;
+    }
+    .copyright {
+        /*color: #333;
+        margin-top: 5px;
+        placeholder; no statement here--skc 
+        */
+    }
+    .logos {
+        display:inline-block;
+        position:absolute;
+        right:0;
+        bottom:0;
+    }
+    .logos a {
+        margin-left: 30px;
+    }
+    .logos a:hover {
+        color:#1492C9;
+    }
+    .logos .icon {
+        /*no styling but we can if the Library every wants these, like homepage--skc */
+    }
+    .logos a:hover .icon {
+        /*...icons to link to something, or add twitter, rss feeds etc. with icons--skc */
+    }
+    .logos .nl, .all-govt {
+        display:inline-block;
+        vertical-align:middle;
+    }
+	
+	
+	/*- ########## Resizing for responsive media ########## */
+    @media screen and (max-width: 600px) {
+        .links, .logos {
+            float:none;
+            text-align:center;
+        }
+        .logos {
+            position:relative;
+            margin:10px 0;
+        }
+        .links li {
+            font-size: 12px;
+            display:inline-block;
+            float:none;
+        }
+        .bar {
+            position:relative;
+        }
+        .bar-wrap {
+            margin-bottom:0;
+        }
+    }
+
+    @media screen and (max-width: 835px)  {
+        #footerWrapper > ul li {
+            float:left;
+            width:auto;
+        }
+    }
+
+    @media screen and (max-width: 768px)  {
+        .links li {
+            margin-right:5px;
+            font-size: 12px;
+        }
+    }    
+    /*ipad in potrait and landscape */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+        prm-logo-after .product-logo-after .md-primoExplore-theme .nlnz-catalogue {
+            display:none;
+        }
+    }
+
+    /*ipad in landscape */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+        prm-logo-after .product-logo-after .md-primoExplore-theme .nlnz-catalogue {
+            display:none;
+        }
+    }
+
+    /*iPad in portrait*/
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+        prm-logo-after .product-logo-after .md-primoExplore-theme .nlnz-catalogue {
+            display:none;
+        }
+     }
+
+    /*browser-specific hack*/
+    /* saf3+, chrome1+ 
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        prm-logo-after .product-logo-after .md-primoExplore-theme .nlnz-catalogue{
+            display:none;
+        }
+    }
+    */
+     /* iPhone / mobile webkit */
+     @media screen and (max-device-width: 480px) {
+        prm-logo-after .product-logo-after .md-primoExplore-theme .nlnz-catalogue {
+            display:none;
+        }
+        prm-logo .product-logo-after{
+            width: 100px; /*seems to be appropriatedly sized to trigger hide-text action*/
+        }
+     }
+
+
+
+.md-headline{font-weight:600;background-color:#00546E;color:white;font-size:20px;padding:7px;}
+.md-headline{font-weight:600;}
+
+
+.c-icon--twitter:before {
+    content: "";
+}
+
+/*end peh customizations */
+
+
